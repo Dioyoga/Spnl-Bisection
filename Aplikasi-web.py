@@ -11,7 +11,6 @@ st.set_page_config(page_title="Solusi SPNL - Metode Bisection", layout="centered
 st.title("Solusi Persamaan Non-Linear (Metode Bisection)")
 st.write("Masukkan fungsi f(x) dan interval [a,b] dimana f(a) dan f(b) berbeda tanda.")
 
-
 # Input
 f_input = st.text_input("Masukkan fungsi f(x) (contoh: x**3 - 4*x + 1):", value="x**3 - 4*x + 1")
 col1, col2 = st.columns(2)
@@ -99,3 +98,4 @@ if st.button("Jalankan Bisection") and func_ok:
 # Footer: tips
 st.markdown("---")
 st.write("Tips: Pastikan f(a) dan f(b) memiliki tanda berlawanan. Untuk fungsi dengan domain terbatas (log, sqrt), pilih interval yang valid.")
+
